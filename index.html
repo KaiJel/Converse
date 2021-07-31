@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.mousewheel.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/main.js"></script>
+    <title>Converse</title>
+</head>
+<body>
+    <header>
+        <div class="header__top">
+            <div class="inner">
+                <ul class="language">
+                    <li class="flag"><img src="imgs/locale-kr.svg"alt="이미지"></li>
+                    <li>KR</li>
+                    <li>한국어</li>
+                </ul>
+                <ul class="slider">
+                    <li>
+                        <h5>new</h5>
+                        <p>척 70 뉴 컬러웨이 출시</p>
+                    </li>
+                    <li>
+                        <h5>notices</h5>
+                        <p>일부 지역 택배사 배송 지연 안내</p>
+                    </li>
+                    <li>
+                        <h5>new</h5>
+                        <p>오리지널 스키드그립 출시 </p>
+                    </li>
+                    <li>
+                        <h5>new</h5>
+                        <p>런스타 하이크 시즈널 컬러 출시 </p>
+                    </li>
+                    <li>
+                        <h5>new</h5>
+                        <p>컨버스 X 스페이스 잼: 새로운 시대 출시 </p>
+                    </li>
+                    <li>
+                        <h5>new</h5>
+                        <p>컨버스 X 골프왕 척 70 플레임 출시 </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="inner">
+                <div class="header__bottom--pc">
+                    <div class="logo"><img src="imgs/logo01.png" alt=""></div>
+                    <ul class="nav">
+                        <li>신발</li>
+                        <li>의류</li>
+                        <li>아동</li>
+                        <li>런칭캘린더</li>
+                        <li>세일</li>
+                    </ul>
+                    <ul class="my-list">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M12 2c2.757 0 5 2.243 5 5.001 0 2.756-2.243 5-5 5s-5-2.244-5-5c0-2.758 2.243-5.001 5-5.001zm0-2c-3.866 0-7 3.134-7 7.001 0 3.865 3.134 7 7 7s7-3.135 7-7c0-3.867-3.134-7.001-7-7.001zm6.369 13.353c-.497.498-1.057.931-1.658 1.302 2.872 1.874 4.378 5.083 4.972 7.346h-19.387c.572-2.29 2.058-5.503 4.973-7.358-.603-.374-1.162-.811-1.658-1.312-4.258 3.072-5.611 8.506-5.611 10.669h24c0-2.142-1.44-7.557-5.631-10.647z"/></svg>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 3l-.743 2h-1.929l-3.474 12h-13.239l-4.615-11h16.812l-.564 2h-13.24l2.937 7h10.428l3.432-12h4.195zm-15.5 15c-.828 0-1.5.672-1.5 1.5 0 .829.672 1.5 1.5 1.5s1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm6.9-7-1.9 7c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5z"/></svg>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M6.28 3c3.236.001 4.973 3.491 5.72 5.031.75-1.547 2.469-5.021 5.726-5.021 2.058 0 4.274 1.309 4.274 4.182 0 3.442-4.744 7.851-10 13-5.258-5.151-10-9.559-10-13 0-2.676 1.965-4.193 4.28-4.192zm.001-2c-3.183 0-6.281 2.187-6.281 6.192 0 4.661 5.57 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-4.011-3.097-6.182-6.274-6.182-2.204 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248z"/></svg>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm1.25 17c0 .69-.559 1.25-1.25 1.25-.689 0-1.25-.56-1.25-1.25s.561-1.25 1.25-1.25c.691 0 1.25.56 1.25 1.25zm1.393-9.998c-.608-.616-1.515-.955-2.551-.955-2.18 0-3.59 1.55-3.59 3.95h2.011c0-1.486.829-2.013 1.538-2.013.634 0 1.307.421 1.364 1.226.062.847-.39 1.277-.962 1.821-1.412 1.343-1.438 1.993-1.432 3.468h2.005c-.013-.664.03-1.203.935-2.178.677-.73 1.519-1.638 1.536-3.022.011-.924-.284-1.719-.854-2.297z"/></svg>
+                        </li>
+                    </ul>
+                    <div class="search">
+                        <span>검색</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M23.809 21.646l-6.205-6.205c1.167-1.605 1.857-3.579 1.857-5.711 0-5.365-4.365-9.73-9.731-9.73-5.365 0-9.73 4.365-9.73 9.73 0 5.366 4.365 9.73 9.73 9.73 2.034 0 3.923-.627 5.487-1.698l6.238 6.238 2.354-2.354zm-20.955-11.916c0-3.792 3.085-6.877 6.877-6.877s6.877 3.085 6.877 6.877-3.085 6.877-6.877 6.877c-3.793 0-6.877-3.085-6.877-6.877z"/></svg>
+                    </div>
+                </div>
+                <div class="header__bottom--767">
+                    <div class="hamenu"><svg width="20" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M24 18v1h-24v-1h24zm0-6v1h-24v-1h24zm0-6v1h-24v-1h24z" fill="#1040e2"/><path d="M24 19h-24v-1h24v1zm0-6h-24v-1h24v1zm0-6h-24v-1h24v1z"/></svg></div>
+                    <div class="logo"><img src="imgs/logo01.png" alt="로고"></div>
+                    <ul class="my-list">
+                        <li> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 3l-.743 2h-1.929l-3.474 12h-13.239l-4.615-11h16.812l-.564 2h-13.24l2.937 7h10.428l3.432-12h4.195zm-15.5 15c-.828 0-1.5.672-1.5 1.5 0 .829.672 1.5 1.5 1.5s1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm6.9-7-1.9 7c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5z"/></svg></li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path d="M23.809 21.646l-6.205-6.205c1.167-1.605 1.857-3.579 1.857-5.711 0-5.365-4.365-9.73-9.731-9.73-5.365 0-9.73 4.365-9.73 9.73 0 5.366 4.365 9.73 9.73 9.73 2.034 0 3.923-.627 5.487-1.698l6.238 6.238 2.354-2.354zm-20.955-11.916c0-3.792 3.085-6.877 6.877-6.877s6.877 3.085 6.877 6.877-3.085 6.877-6.877 6.877c-3.793 0-6.877-3.085-6.877-6.877z"/></svg></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="on-menu">
+        <div>
+            <div class="on-menu__header">
+                <img src="imgs/logo03.png" alt="로고">
+                <ul class="my-list">
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path d="M12 2c2.757 0 5 2.243 5 5.001 0 2.756-2.243 5-5 5s-5-2.244-5-5c0-2.758 2.243-5.001 5-5.001zm0-2c-3.866 0-7 3.134-7 7.001 0 3.865 3.134 7 7 7s7-3.135 7-7c0-3.867-3.134-7.001-7-7.001zm6.369 13.353c-.497.498-1.057.931-1.658 1.302 2.872 1.874 4.378 5.083 4.972 7.346h-19.387c.572-2.29 2.058-5.503 4.973-7.358-.603-.374-1.162-.811-1.658-1.312-4.258 3.072-5.611 8.506-5.611 10.669h24c0-2.142-1.44-7.557-5.631-10.647z"/></svg>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path d="M24 3l-.743 2h-1.929l-3.474 12h-13.239l-4.615-11h16.812l-.564 2h-13.24l2.937 7h10.428l3.432-12h4.195zm-15.5 15c-.828 0-1.5.672-1.5 1.5 0 .829.672 1.5 1.5 1.5s1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm6.9-7-1.9 7c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5z"/></svg>
+                    </li>
+                    <li class="close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+                    </li>
+                </ul>
+            </div>
+            <div class="on-menu--scroll">
+                <ul class="on-menu__sale-list">
+                    <li><a href="#">신발</a></li>
+                    <li><a href="#">의류</a></li>
+                    <li><a href="#">아동</a></li>
+                    <li><a href="#">런칭캘린더</a></li>
+                    <li><a href="#">세일</a></li>
+                </ul>
+                <ul class="on-menu__client">
+                    <li>
+                        <span>마이페이지</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>
+                    </li>
+                    <li>
+                        <span>주문/배송조회</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>
+                    </li>
+                    <li>
+                        <span>고객지원센터</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>
+                    </li>
+                    <li>
+                        <span>로그인</span>
+                    </li>
+                    <li>family sites
+                        <span class="slide-toggle-btn">
+                            <svg class="plus on"xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z"/></svg>
+                            <svg class="minus"xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path d="M0 10h24v4h-24z"/></svg>
+                        </span>
+                        <ul class="slide-toggle">
+                            <li>NIKE</li>
+                            <li>Jordan</li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="footer-767">
+                    <h5>(유)컨버스코리아</h5>
+                    <p>대표 주형준</p>
+                    <p>개인정보책임 주형준</p>
+                    <p>사업자등록번호 220-88-74818</p>
+                    <p>통신판매업 신고번호 제2016-서울강남-00478호</p>
+                    <a href="#">통신판매업자 신원정보 확인</a>
+                    <address>주소 서울특별시 강남구 테헤란로 152(역삼동) 강남파이낸스센터 32층</address>
+                    <p>고객상담팀: 080-987-0182</p>
+                    <p>(상담시간 월.금: AM:09:00~PM 05:30, 주말/공휴일 휴무)</p>
+                    <a href="#">conversekorea@converse.co.kr</a><span>(24시간 접수가능)</span>
+                    <ul class="policy">
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">이용약관</a></li>
+                    </ul>
+                    <p>컨버스 코리아. All Rights Reserved.</p>
+                    <ul class="sns">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="language">
+                    <li class="flag"><img src="imgs/locale-kr.svg"alt="이미지"></li>
+                    <li>KR</li>
+                    <li>한국어</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <main class="inner">
+        <div class="fix-tag">
+            <img src="imgs/logo02.png" alt="이미지">
+            <span> 척 70 시즈널 컬러</span>
+        </div>
+        <section class="paisely-collect">
+            <div class="paisely-collect__left">
+                <div><img src="imgs/sec01_01.jpg" alt="이미지"></div>
+                <div class="text-box">
+                    <h2><p>paisely</p><p>collection</p></h2>
+                    <p>무더운 여름, 시원한 느낌을 주는<br>페이즐리 패턴 스니커즈로 스타일 포인트를 더하세요.</p>
+                    <a href="#" class="moreBuy-btn black">구매하기</a>
+                </div>
+            </div>
+            <div class="m767"><a href="#" class="moreBuy-btn black">구매하기</a></div>
+            <ul class="item-list">
+                <li>
+                    <img src="imgs/sec01_02.jpg" alt="이미지">
+                    <div class="text-box">
+                        <div class="text-box__top">
+                            <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M6.28 3c3.236.001 4.973 3.491 5.72 5.031.75-1.547 2.469-5.021 5.726-5.021 2.058 0 4.274 1.309 4.274 4.182 0 3.442-4.744 7.851-10 13-5.258-5.151-10-9.559-10-13 0-2.676 1.965-4.193 4.28-4.192zm.001-2c-3.183 0-6.281 2.187-6.281 6.192 0 4.661 5.57 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-4.011-3.097-6.182-6.274-6.182-2.204 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248z"/></svg></div>
+                            <span>new arrival</span>
+                        </div>
+                        <div>
+                            <a href="#">척 70 페이즐리</a>
+                            <p>115,000원</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="imgs/sec01_03.jpg" alt="이미지">
+                    <div class="text-box">
+                        <div class="text-box__top">
+                            <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M6.28 3c3.236.001 4.973 3.491 5.72 5.031.75-1.547 2.469-5.021 5.726-5.021 2.058 0 4.274 1.309 4.274 4.182 0 3.442-4.744 7.851-10 13-5.258-5.151-10-9.559-10-13 0-2.676 1.965-4.193 4.28-4.192zm.001-2c-3.183 0-6.281 2.187-6.281 6.192 0 4.661 5.57 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-4.011-3.097-6.182-6.274-6.182-2.204 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248z"/></svg></div>
+                            <span>new arrival</span>
+                        </div>
+                        <div>
+                            <a href="#">척 70 페이즐리</a>
+                            <p>115,000원</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="imgs/sec01_04.jpg" alt="이미지">
+                    <div class="text-box">
+                        <div class="text-box__top">
+                            <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M6.28 3c3.236.001 4.973 3.491 5.72 5.031.75-1.547 2.469-5.021 5.726-5.021 2.058 0 4.274 1.309 4.274 4.182 0 3.442-4.744 7.851-10 13-5.258-5.151-10-9.559-10-13 0-2.676 1.965-4.193 4.28-4.192zm.001-2c-3.183 0-6.281 2.187-6.281 6.192 0 4.661 5.57 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-4.011-3.097-6.182-6.274-6.182-2.204 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248z"/></svg></div>
+                            <span>new arrival</span>
+                        </div>
+                        <div>
+                            <a href="#">척테일러 올스타 데인티 뮬 페이즐리</a>
+                            <p>
+                                <span>75,000원</span>
+                                <span>67,500원</span>
+                                <span>10%</span>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="imgs/sec01_05.jpg" alt="이미지">
+                    <div class="text-box">
+                        <div class="text-box__top">
+                            <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M6.28 3c3.236.001 4.973 3.491 5.72 5.031.75-1.547 2.469-5.021 5.726-5.021 2.058 0 4.274 1.309 4.274 4.182 0 3.442-4.744 7.851-10 13-5.258-5.151-10-9.559-10-13 0-2.676 1.965-4.193 4.28-4.192zm.001-2c-3.183 0-6.281 2.187-6.281 6.192 0 4.661 5.57 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-4.011-3.097-6.182-6.274-6.182-2.204 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248z"/></svg></div>
+                            <span>new arrival</span>
+                        </div>
+                        <div>
+                            <a href="#">런스타 하이크 페이즐리</a>
+                            <p>115,000원</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="new-item">
+            <h3>Shop By Style</h3>
+            <div>
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M20.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/></svg>
+                <a href="#">신상품 보러 가기</a>
+            </div>
+        </section>
+        <section class="style-list white">
+            <ul>
+                <li>
+                    <img src="imgs/sec02_01.jpg" alt="이미지">
+                    <p><a href="#">하이 탑</a></p>
+                </li>
+                <li>
+                    <img src="imgs/sec02_02.jpg" alt="이미지">
+                    <p><a href="#">로우 탑</a></p>
+                </li>
+                <li>
+                    <img src="imgs/sec02_03.jpg" alt="이미지">
+                    <p><a href="#">플랫폼</a></p>
+                </li>
+                <li>
+                    <img src="imgs/sec02_04.jpg" alt="이미지">
+                    <p><a href="#">서머 실루엣</a></p>
+                </li>
+            </ul>
+        </section>
+        <section class="collabo">
+            <div class="collabo__left white">
+                <div class="collabo__left--text-box">
+                    <h2>
+                        <p>converse x</p>
+                        <p>space jam:</p>
+                        <p>a new legacy</p>
+                    </h2>
+                    <p class="collabo__p">'툰 월드'속 전설적인 루니 툰 캐릭터들과 함께<br>아이코닉한 농구 컬렉션을 새롭게 선보입니다.</p>
+                    <a  href="#" class="moreBuy-btn">더 알아보기</a>
+                </div>
+                <img src="imgs/sec03_01.jpg" alt="이미지">
+            </div>
+            <div class="m767"><a href="#" class="moreBuy-btn">더 알아보기</a></div>
+            <div class="collabo__right">
+                <div class="hover-on"><p><a href="#">더 알아보기</a></p></div>
+            </div>
+        </section>
+        <section class="iconic-style">
+            <div class="iconic-style__left white">
+                <div class="text-box">
+                    <h2>iconic style</h2>
+                    <p class="iconic__p">척 70은 아이코닉한 디자인과 빈티지한 매력으로<br>모던한 스트릿 무드를 선사합니다.</p>
+                    <a href="#" class="moreBuy-btn">구매하기</a>
+                </div>
+                <img src="imgs/sec04_01.jpg" alt="이미지">
+            </div>
+            <div class="m767"><a href="#" class="moreBuy-btn">구매하기</a></div>
+            <div class="iconic-style__right">
+                <div class="hover-on"></div>
+            </div>
+        </section>
+        <section class="comport">
+            <div class="comport__left">
+                <div class="hover-on"></div>
+            </div>
+            <div class="comport__right">
+                <div class="text-box">
+                    <h2>
+                        <p>next-level</p>
+                        <p>comport</p>
+                    </h2>
+                    <p class="comport__p">새로운 차원의 편안함.<br>뉴 컬러로 돌아온 cx컬렉션을 만나보세요.</p>
+                    <a href="#" class="moreBuy-btn black">더 알아보기</a>
+                </div>
+                <img src="imgs/sec05_02.jpg" alt="이미지">
+            </div>
+            <div class="m767"><a href="#" class="moreBuy-btn black">더 알아보기</a></div>
+        </section>
+        <section class="new-item">
+            <h3>Trending Styles</h3>
+            <div>
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M20.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/></svg>
+                <a href="#">베스트셀러 보기</a>
+            </div>
+        </section>
+        <section class="style-list white">
+            <ul>
+                <li>
+                    <img src="imgs/sec10_01.jpg" alt="이미지">
+                    <p><a href="#"> 척 70 클래식</a></p>
+                </li>
+                <li>
+                    <img src="imgs/sec10_02.jpg" alt="이미지">
+                    <p><a href="#">온라인 온리</a></p>
+                </li>
+                <li>
+                    <img src="imgs/sec10_03.jpg" alt="이미지">
+                    <p><a href="#">시즈널 컬러</a></p>
+                </li>
+                <li>
+                    <img src="imgs/sec10_04.jpg" alt="이미지">
+                    <p><a href="#">슬라이드</a></p>
+                </li>
+            </ul>
+        </section>
+        <section class="texture">
+            <ul class="item-list">
+                <li><img src="imgs/sec06_01.gif" alt="이미지"></li>
+                <li>
+                    <img src="imgs/sec06_02.jpg" alt="이미지">
+                    <div class="text-box">
+                        <div class="text-box__top">
+                            <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M6.28 3c3.236.001 4.973 3.491 5.72 5.031.75-1.547 2.469-5.021 5.726-5.021 2.058 0 4.274 1.309 4.274 4.182 0 3.442-4.744 7.851-10 13-5.258-5.151-10-9.559-10-13 0-2.676 1.965-4.193 4.28-4.192zm.001-2c-3.183 0-6.281 2.187-6.281 6.192 0 4.661 5.57 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-4.011-3.097-6.182-6.274-6.182-2.204 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248z"/></svg></div>
+                            <span>new arrival</span>
+                        </div>
+                        <div>
+                            <a href="#">척70 하이브리드 텍스처</a>
+                            <p>99,000원</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="imgs/sec06_03.jpg" alt="이미지">
+                    <div class="text-box">
+                        <div class="text-box__top">
+                            <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M6.28 3c3.236.001 4.973 3.491 5.72 5.031.75-1.547 2.469-5.021 5.726-5.021 2.058 0 4.274 1.309 4.274 4.182 0 3.442-4.744 7.851-10 13-5.258-5.151-10-9.559-10-13 0-2.676 1.965-4.193 4.28-4.192zm.001-2c-3.183 0-6.281 2.187-6.281 6.192 0 4.661 5.57 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-4.011-3.097-6.182-6.274-6.182-2.204 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248z"/></svg></div>
+                            <span>new arrival</span>
+                        </div>
+                        <div>
+                            <a href="#">척70 하이브리드 텍스처</a>
+                            <p>95,000원</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="texture__right">
+                <div><img src="imgs/sec06_04.jpg" alt="이미지"></div>
+                <div class="text-box white">
+                    <h2><p>chuck 70</p><p>hybrid texture</p></h2>
+                    <p>3색 컬러 패널 스니커즈로<br>여러분의 스타일과 개성을 마음껏 표현해보세요</p>
+                    <a href="#" class="moreBuy-btn">구매하기</a>
+                </div>
+            </div>
+            <div class="m767"><a href="#" class="moreBuy-btn">구매하기</a></div>
+        </section>
+        <section class="shine">
+            <div class="text-box">
+                <h2>hybrid shine</h2>
+                <p>컬러 팝 디자인에 여러 소재를 믹스 앤 매치한<br>척70 하이브리드 샤인을 만나보세요</p>
+                <a href="#" class="moreBuy-btn black">구매하기</a>
+            </div>
+            <img src="imgs/sec07_01.jpg" alt="이미지">
+            <div class="m767"><a href="#" class="moreBuy-btn black">구매하기</a></div>
+        </section>
+        <section class="mule">
+            <div class="mule__left">
+                <div><img src="imgs/sec08_01.gif" alt="이미지"></div>
+                <div class="text-box">
+                    <h2><p>mule</p><p>collection</p></h2>
+                    <p>무더운 여름,<br>트렌디하고 간편한 뮬 컬렉션과 함께하세요.</p>
+                    <a href="#" class="moreBuy-btn black">구매하기</a>
+                </div>
+            </div>
+            <ul class="item-list">
+                <li><div class="hover-on"></div></li>
+                <li>
+                    <img src="imgs/sec08_03.jpg" alt="이미지">
+                    <div class="text-box">
+                        <div class="text-box__top">
+                            <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M6.28 3c3.236.001 4.973 3.491 5.72 5.031.75-1.547 2.469-5.021 5.726-5.021 2.058 0 4.274 1.309 4.274 4.182 0 3.442-4.744 7.851-10 13-5.258-5.151-10-9.559-10-13 0-2.676 1.965-4.193 4.28-4.192zm.001-2c-3.183 0-6.281 2.187-6.281 6.192 0 4.661 5.57 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-4.011-3.097-6.182-6.274-6.182-2.204 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248z"/></svg></div>
+                            <span>best seller new arrival</span>
+                        </div>
+                        <div>
+                            <a href="#">척테일러 올스타 데인티 뮬 시즈널 컬러</a>
+                            <p>
+                                <span>69,000원</span>
+                                <span>62,100원</span>
+                                <span>10%</span>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="imgs/sec08_04.jpg" alt="이미지">
+                    <div class="text-box">
+                        <div class="text-box__top">
+                            <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M6.28 3c3.236.001 4.973 3.491 5.72 5.031.75-1.547 2.469-5.021 5.726-5.021 2.058 0 4.274 1.309 4.274 4.182 0 3.442-4.744 7.851-10 13-5.258-5.151-10-9.559-10-13 0-2.676 1.965-4.193 4.28-4.192zm.001-2c-3.183 0-6.281 2.187-6.281 6.192 0 4.661 5.57 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-4.011-3.097-6.182-6.274-6.182-2.204 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248z"/></svg></div>
+                            <span>best seller new arrival</span>
+                        </div>
+                        <div>
+                            <a href="#">척테일러 올스타 데인티 뮬 시즈널 컬러</a>
+                            <p>
+                                <span>69,000원</span>
+                                <span>62,100원</span>
+                                <span>10%</span>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="colorway">
+            <div class="colorway__left">
+                <div><img src="imgs/sec09_01.jpg" alt="이미지"></div>
+                <div class="text-box white">
+                    <h2><p>chuck 70</p><p>new colorway</p></h2>
+                    <p>낙천적인 자연의 컬러를 통해 새롭게 탄생한<br>프리미엄 컴포트 척 70을 만나보세요.</p>
+                    <a href="#" class="moreBuy-btn">더 알아보기</a>
+                </div>
+            </div>
+            <ul class="item-list">
+                <li>
+                    <img src="imgs/sec09_02.jpg" alt="이미지">
+                    <div class="text-box">
+                        <div class="text-box__top">
+                            <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M6.28 3c3.236.001 4.973 3.491 5.72 5.031.75-1.547 2.469-5.021 5.726-5.021 2.058 0 4.274 1.309 4.274 4.182 0 3.442-4.744 7.851-10 13-5.258-5.151-10-9.559-10-13 0-2.676 1.965-4.193 4.28-4.192zm.001-2c-3.183 0-6.281 2.187-6.281 6.192 0 4.661 5.57 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-4.011-3.097-6.182-6.274-6.182-2.204 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248z"/></svg></div>
+                            <span>new arrival</span>
+                        </div>
+                        <div>
+                            <a href="#">척 70 시즈널 캔버스</a>
+                            <p>95,000원</p>
+                        </div>
+                    </div>
+                </li>
+                <li><img src="imgs/sec09_03.gif" alt="이미지"></li>
+                <li><img src="imgs/sec09_04.gif" alt="이미지"></li>
+                <li>
+                    <img src="imgs/sec09_05.jpg" alt="이미지">
+                    <div class="text-box">
+                        <div class="text-box__top">
+                            <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M6.28 3c3.236.001 4.973 3.491 5.72 5.031.75-1.547 2.469-5.021 5.726-5.021 2.058 0 4.274 1.309 4.274 4.182 0 3.442-4.744 7.851-10 13-5.258-5.151-10-9.559-10-13 0-2.676 1.965-4.193 4.28-4.192zm.001-2c-3.183 0-6.281 2.187-6.281 6.192 0 4.661 5.57 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-4.011-3.097-6.182-6.274-6.182-2.204 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248z"/></svg></div>
+                            <span>new arrival</span>
+                        </div>
+                        <div>
+                            <a href="#">척 70 시즈널 캔버스</a>
+                            <p>95,000원</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="explore">
+            <h3>Explore Converse</h3>
+            <ul>
+                <li>
+                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M20.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/></svg>
+                    <a href="#">여성<br>전체보기</a>
+                </li>
+                <li>
+                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M20.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/></svg>
+                    <a href="#">남성<br>전체보기</a>
+                </li>
+                <li>
+                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M20.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/></svg>
+                    <a href="#">아동<br>전체보기</a>
+                </li>
+                <li>
+                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M20.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/></svg>
+                    <a href="#">척 70</a>
+                </li>
+                <li>
+                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M20.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/></svg>
+                    <a href="#">클래식 척</a>
+                </li>
+                <li>
+                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M20.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/></svg>
+                    <a href="#">척테일러 올스타</a>
+                </li>
+                <li>
+                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M20.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/></svg>
+                    <a href="#">회원전용</a>
+                </li>
+                <li>
+                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M20.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/></svg>
+                    <a href="#">온라인 온리</a>
+                </li>
+                <li>
+                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M20.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/></svg>
+                    <a href="#">빅 사이즈</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <div class="service">
+        <div class="service__top">
+            <ul class="inner">
+                <li>
+                    <h4>무료배송</h4>
+                    <p>5만원 이상 구매 시 무료배송</p>
+                </li>
+                <li>
+                    <h4>교환/반품 서비스</h4>
+                    <p>사이즈를 잘못 선택하셨나요?<br>교환/반품 서비스에 대해<br>더 알아보세요.</p>
+                    <a href="#">자세히 보기</a>
+                </li>
+                <li>
+                    <h4>회원 전용 혜택</h4>
+                    <p>신규가입 축하 쿠폰, 드로우 응모 등<br>지금 회원 가입하시고<br>더욱 특별한 혜택을 누려보세요.</p>
+                    <a href="#">회원 가입 하기</a>
+                </li>
+                <li>
+                    <h4>Follow Us</h4>
+                    <p>컨버스의 SNS 채널을 통해<br>신상품 정보 및 이벤트 등 새로운 소식을<br>확인하세요.</p>
+                </li>
+            </ul>
+        </div>
+        <ul class="service__center">family sites  
+            <span class="slide-toggle-btn">
+                <svg class="plus on"xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z"/></svg>
+                <svg class="minus"xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path d="M0 10h24v4h-24z"/></svg>
+            </span>
+            <ul class="slide-toggle">
+                <li>NIKE</li>
+                <li>Jordan</li>
+            </ul>
+        </ul>
+        <div class="service__bottom">
+            <ul class="service__bottom--ul01 inner">
+                <li>follow us
+                    <ul class="ul02">
+                        <li>페이스북</li>
+                        <li>인스타</li>
+                    </ul>
+                </li>
+                <li>support
+                    <ul class="ul02">
+                        <li>고객지원센터</li>
+                        <li>1:1 문의</li>
+                        <li>주문/배송조회</li>
+                    </ul>
+                </li>
+                <li>information
+                    <ul class="ul02">
+                        <li>컨버스에 대하여</li>
+                        <li>회원가입</li>
+                        <li>매장안내</li>
+                        <li>공지사항</li>
+                    </ul>
+                </li>
+                <li>policy
+                    <ul class="ul02">
+                        <li>이용약관</li>
+                        <li>개인정보처리방침</li>
+                    </ul>
+                </li>
+                <li>family sites
+                    <ul class="ul02">
+                        <li>NIKE</li>
+                        <li>Jordan</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div> 
+    <footer>
+        <div class="inner">
+            <div class="footer__company">
+                <ul class="footer__company-info">
+                    <li><a href="#">(유)컨버스코리아</a></li>
+                    <li>대표 주형준</li>
+                    <li>개인정보책임 주형준</li>
+                    <li>사업자등록번호 220-88-74818</li>
+                </ul>
+                <ul class="footer__company-no">
+                    <li>통신판매업 신고번호 제 2016-서울강남00478호</li>
+                    <li><a href="#" class="footer__link--white">통신판매업자 신원정보 확인</a></li>
+                </ul>
+                <address>
+                    주소 서울특별시 강남구 테헤란로 152(역삼동)강남파이낸스센터32층
+                </address>
+                <span>고객상담팀: 080-987-0182 (상담시간 월금: AM:09:00-PM 05:30 주말/공휴일 휴무)</span>
+                <a href="#" class="footer__link--white">conversekorea@converse.co.kr</a>
+                <span>(24시간 접수 가능)</span>
+                <p class="copylight">2020 Converse Korea LLC. All Rights Reserved.</p>
+            </div>
+            <div class="footer__KGinisis">
+                <p>KG이니시스 구매안전 서비스</p>
+                <p>고객님은 안전거래를 위해 현금 등으로 결제시<br>저희 쇼핑몰이 가입한 PG에스크로 구매안전 서비스를 이용하실 수 있습니다.</p>
+                <p>결제대금예치업 등록번호 02-005-00013</p>
+                <p><a href="#" class="footer__link--white">서비스 가입사실 확인</a></p>
+            </div>
+        </div>
+        <div class="footer-767">
+            <h5>(유)컨버스코리아</h5>
+            <p>대표 주형준</p>
+            <p>개인정보책임 주형준</p>
+            <p>사업자등록번호 220-88-74818</p>
+            <p>통신판매업 신고번호 제2016-서울강남-00478호</p>
+            <a href="#">통신판매업자 신원정보 확인</a>
+            <address>주소 서울특별시 강남구 테헤란로 152(역삼동) 강남파이낸스센터 32층</address>
+            <p>고객상담팀: 080-987-0182</p>
+            <p>(상담시간 월.금: AM:09:00~PM 05:30, 주말/공휴일 휴무)</p>
+            <a href="#">conversekorea@converse.co.kr</a><span>(24시간 접수가능)</span>
+            <ul class="policy">
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이용약관</a></li>
+            </ul>
+            <p>컨버스 코리아. All Rights Reserved.</p>
+            <ul class="sns">
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                </li>
+            </ul>
+        </div>
+        <ul class="language">
+            <li class="flag"><img src="imgs/locale-kr.svg"alt="이미지"></li>
+            <li>KR</li>
+            <li>한국어</li>
+        </ul>
+    </footer>
+</body>
+</html>
