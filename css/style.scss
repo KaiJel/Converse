@@ -210,7 +210,6 @@ h3 { font: {size: 32px; weight: 700;} }
                 &:not(:nth-child(2)) { svg { padding-top: 2px;}}
             }
         }
-
     }
     &__sale-list {
         padding: 32px;
@@ -325,8 +324,6 @@ h3 { font: {size: 32px; weight: 700;} }
     }
 }
 
-
-//-------------------contents시작
 //헤더
 .header {
     &__top {
@@ -421,14 +418,12 @@ h3 { font: {size: 32px; weight: 700;} }
     }
 }
 
-//fix aside
-.fix-tag {
+aside {
     position: fixed;
-    right: -135px;
+    right: -170px;
     bottom: 50px;
     z-index: 100;
     width: 200px;
-    height: 80px;
     background-color: $color-black;
     color: $color-white;
     display: flex;
@@ -644,7 +639,6 @@ section { margin-top: 50px; }
         }
     }
 }
-//section 끝
 
 .service {
     &__top {
@@ -697,7 +691,6 @@ section { margin-top: 50px; }
     }
 }
 
-//footer
 footer { 
     background-color: $color-black;
     color: $color-white-opacity;
@@ -744,19 +737,9 @@ footer {
         img { width: 100%; height: auto;}
     }
 
-    //공통요소
     section { margin-top: 0;}
 
-    .moreBuy-btn { display: none; }
-
-    .m767 {
-        display: block; 
-        .moreBuy-btn { display: block; }
-    }
-
-    .item-list { width: 100%; }
-
-    .fix-tag {
+    aside {
         position: fixed;
         right: 0;
         bottom: 15px;
@@ -767,13 +750,21 @@ footer {
         img { width: 20px; height: 20px;}
     }
 
+    .moreBuy-btn { display: none; }
+
+    .m767 {
+        display: block; 
+        .moreBuy-btn { display: block; }
+    }
+
+    .item-list { width: 100%; }
+
     .hover-on {
         background-color: rgba(255,255,255,0);
         opacity: 1;
         cursor: pointer;
     }
 
-    //header
     .header {
         &__top {
             .language { display: none;} 
@@ -805,7 +796,6 @@ footer {
         }
     }
 
-    //section 시작
     .new-item { margin: 20px 0;}
 
     .style-list {
@@ -894,7 +884,6 @@ footer {
             }
         }
     }
-    //section끝
 
     .service {
         &__top {
@@ -915,7 +904,6 @@ footer {
         &__bottom { display: none;}
     }
 
-    //footer
     footer {
         padding: 0;
         .inner { display: none;}
